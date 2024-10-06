@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarIcon, CheckCircle, FileTextIcon, UserIcon, X } from "lucide-react";
 import { useState } from "react";
@@ -8,7 +8,7 @@ import { approveByHod, rejectBySecretary } from "@/actions/document";
 import { revalidatePath } from "next/cache";
 import Link from "next/link";
 
-export default function secretaryInfo({ document }: { document: any }) {
+export default function SecretaryInfo({ document }: { document: any }) {
   // Convert date to string
   const date = document.createdAt.toISOString().split("T")[0];
 
